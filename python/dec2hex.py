@@ -29,7 +29,6 @@ while True:
             else:
                 print("Przekroczono zakres wyswietlania!!!")
                 break
-    
     if zakres<=32:
         for i in postac_hex:
             print(i,end='')
