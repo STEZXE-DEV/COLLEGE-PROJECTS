@@ -27,7 +27,7 @@ while True:
                     if int(liczba)==0:
                         break
             else:
-                print("Przekroczono zakres wyswietlania!")
+                print("Przekroczono zakres wyswietlania!!!")
                 break
     
     if zakres<=32:
