@@ -1,5 +1,5 @@
 while True:    
-    liczba = int(input("\nPodaj liczbe w systemie dziesiętnym\n"))
+    liczba = int(input("\nPodaj liczbe w systemie dziesiętnym:\n"))
     postac_hex=[]
     hex={10: "A",11: "B",12: "C",13: "D",14: "E",15: "F"}
     zakres=0
@@ -32,7 +32,7 @@ while True:
     if zakres<=32:
         for i in postac_hex:
             print(i,end='')
-        print("\n=================================\n")
+        print("\n================================\n")
         print(f"Wyswietlane znaki: {zakres}")
     else:
         print("ERROR - Liczba jest zbyt duza!")
