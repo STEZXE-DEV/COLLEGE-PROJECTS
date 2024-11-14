@@ -5,7 +5,7 @@ while True:
         liczba=int(liczba)
         dlugosc=0
         postac_oct=[]
-        if zakres>=32:
+        if zakres>32:
             print("\n===================ERROR====================")
             print("Przekroczono zakres mozliwych do wyswietlenia znakow!!!")
             print("===================ERROR====================\n")
