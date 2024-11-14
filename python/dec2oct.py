@@ -1,7 +1,7 @@
 while True:   
     liczba = str(input("\nPodaj liczbe w systemie dziesietnym [DEC]:\n"))
     if liczba.isdigit():
-        zakres=len(str(liczba))
+        zakres=len(liczba)
         liczba=int(liczba)
         dlugosc=0
         postac_oct=[]
