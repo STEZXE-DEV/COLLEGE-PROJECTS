@@ -1,5 +1,8 @@
 while True:
+    print("<<<<<<   NAPISZ exit BY ZAKONCZYC PROGRAM  >>>>>>>")
     liczba = str(input("Podaj liczbe w postaci osemkowej: \n"))
+    if liczba=="exit":
+        break
     postac_oct = list(liczba)
     error=0
     error_alert=[]
