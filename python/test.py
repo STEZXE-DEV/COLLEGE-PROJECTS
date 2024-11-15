@@ -1,4 +1,3 @@
 
-print("error: integer out of context ąąąąćććźźź")
-x=input()
-print(hex(int(x)))   
+print("error: integer out of context ")
+print(__name__)  
