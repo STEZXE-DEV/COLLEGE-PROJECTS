@@ -1,1 +1,1 @@
-print("Litwo! Ojczyzno moja! ty jesteś jak zdrowie.\nIle cię trzeba cenić, ten tylko się dowie")
+print("Litwo! Ojczyzno moja! ty jesteś jak zdrowie.\nIle cię trzeba cenić, ten tylko się dowie") #\n powoduje przejscie do nowej linii w tekscie
