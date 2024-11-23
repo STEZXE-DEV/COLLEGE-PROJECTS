@@ -27,7 +27,7 @@ else:
         rok += 1800
         mies -= 80
     else:
-        print("Nieprawidlowy miesiac w numerze PESEL")
+        print("Nieprawidlowo podany miesiac w numerze PESEL")
     data_pesel = datetime(rok, mies, dzien)
     roznica = data_teraz - data_pesel
     if roznica.days//365>=18:
