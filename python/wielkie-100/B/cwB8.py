@@ -9,5 +9,5 @@ wartosc2 = pyi.inputFloat(prompt="Podaj wartosc wieksza niz 4.2: \n", greaterTha
 kolor = pyi.inputMenu(['red', 'green', 'blue'], prompt="Wybierz kolor z dostepnych na liscie: \n") 
 #podanie wartosci w typie BOOL (TRUE/FALSE) 
 w_bool = pyi.inputBool(prompt="True/False: \n") 
-#wypisanie wszystkich inputow
+#wypisanie wszystkich inputow 
 print(f"Podana data i godzina: {data}\nWartosc z zakresu [1000,1005]: {wartosc1}\nWartosc wieksza niz 4.2: {wartosc2}\nKolor z listy: {kolor}\nWartosc BOOL: {w_bool}")
