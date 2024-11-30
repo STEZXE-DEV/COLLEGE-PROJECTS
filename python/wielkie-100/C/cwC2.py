@@ -15,9 +15,9 @@ wynik = [obl1,obl2,obl3,obl4]
 #warunek: a i b nie moga wynosic zero
 if a!=0 and b!=0:
 
-#wypisanie wynikow obliczen (kazdy w osobnej linii)
-    for i in wynik:
-        print(f"Wynik: {i}")
+#wypisanie wynikow obliczen (kazdy w osobnej linii wraz numeracja linii)
+    for i in range(0,4):
+        print(f"Wynik nr.{i+1}: {wynik[i]}")
 
 #postepowanie gdy warunek nie zostanie spelniony
 elif a == 0:
