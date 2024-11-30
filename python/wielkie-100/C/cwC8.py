@@ -15,20 +15,20 @@ wejscie = pyi.inputInt(prompt="Wybierz odpowiedznia cyfre: ", min=1, max=4)
 #sprawdzenie zmiennej 'wejscie'
 match wejscie:
     case 1: #przypadek kiedy wejscie == 1
-        a = pyi.inputInt(prompt="Podaj dl. podstawy trojkata: ", greaterThan=0)
-        h = pyi.inputInt(prompt="Podaj dl. wysokosci trojkata: ", greaterThan=0)
+        a = pyi.inputFloat(prompt="Podaj dl. podstawy trojkata: ", greaterThan=0)
+        h = pyi.inputFloat(prompt="Podaj dl. wysokosci trojkata: ", greaterThan=0)
         wynik = (a*h)/2
     case 2: #przypadek kiedy wejscie == 2
-        a = pyi.inputInt(prompt="Podaj dl. podstawy trojkata: ", greaterThan=0)
-        b = pyi.inputInt(prompt="Podaj dl. ramienia trojkata: ", greaterThan=0)
+        a = pyi.inputFloat(prompt="Podaj dl. podstawy trojkata: ", greaterThan=0)
+        b = pyi.iinputFloat(prompt="Podaj dl. ramienia trojkata: ", greaterThan=0)
         h = m.sqrt(-((a/2)**2)+b**2)
         wynik = (a*h)/2
     case 3: #przypadek kiedy wejscie == 3
-        a = pyi.inputInt(prompt="Podaj dl. boku a: ", greaterThan=0)
-        b = pyi.inputInt(prompt="Podaj dl. boku b: ", greaterThan=0)
+        a = pyi.inputFloat(prompt="Podaj dl. boku a: ", greaterThan=0)
+        b = pyi.inputFloat(prompt="Podaj dl. boku b: ", greaterThan=0)
         wynik = a*b
     case 4: #przypadek kiedy wejscie == 4
-        r = pyi.inputInt(prompt="Podaj dl. promienia okregu opisanego na pieciokacie: ", greaterThan=0)
+        r = pyi.inputFloat(prompt="Podaj dl. promienia okregu opisanego na pieciokacie: ", greaterThan=0)
         wynik = 5/4*r**2*m.sin((2*m.pi)/5)
 
 #wypisanie nazwy ze slownika 'typy' zgodnie z podanym 'wejscie', <.upper()> - zmienia litery na WIELKIE
