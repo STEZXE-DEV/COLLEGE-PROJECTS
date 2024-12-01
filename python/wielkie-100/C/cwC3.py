@@ -7,15 +7,15 @@ import math as m
 pi=np.float32(m.pi) #deklaracja liczby pi z modulu math
 
 #pobranie wejsc i konwersja na float32
-a=pyi.inputFloat(prompt="Podaj wartosc a: \n")
+a=pyi.inputFloat(prompt="Podaj wartosc a (w stopniach): \n")
 a = np.float32(a)
-b=pyi.inputFloat(prompt="Podaj wartosc b: \n")
+b=pyi.inputFloat(prompt="Podaj wartosc b (w radianach): \n")
 b = np.float32(b)
 
 #wykonanie obliczen podanych w zadaniu
-obl1=m.sin(a)
+obl1=m.sin(m.radians(a))
 obl2=m.cos(b)
-obl3=m.cos(a)+m.cos(b)
+obl3=m.cos(m.radians(a))+m.cos(b)
 obl4=m.radians(a)
 obl5=m.degrees(b)
 wynik = [obl1,obl2,obl3,obl4,obl5] #lista z wynikami obliczen
