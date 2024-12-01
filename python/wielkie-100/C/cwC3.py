@@ -16,8 +16,8 @@ b = np.float32(b)
 obl1=m.sin(a)
 obl2=m.cos(b)
 obl3=m.cos(a)+m.cos(b)
-obl4=m.radians(a/pi)
-obl5=m.degrees(b*pi)
+obl4=m.radians(a)
+obl5=m.degrees(b)
 wynik = [obl1,obl2,obl3,obl4,obl5] #lista z wynikami obliczen
 dl=len(wynik) #dlugosc listy z wynikami
 
