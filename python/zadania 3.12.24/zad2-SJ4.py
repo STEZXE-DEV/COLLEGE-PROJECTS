@@ -9,4 +9,3 @@ wejscie=input("Podaj zdanie: ")
 wejscie2=input("Podaj litere: ")
 wynik = sprawdz_litery(wejscie, wejscie2)
 print(f"{wynik}")
-

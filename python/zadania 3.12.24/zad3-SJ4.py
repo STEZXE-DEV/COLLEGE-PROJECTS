@@ -20,4 +20,3 @@ while True:
             print(f"'{wejscie}' to {wynik}")
         else:
             print("To NIE jest liczba PIERWSZA!")
-    
