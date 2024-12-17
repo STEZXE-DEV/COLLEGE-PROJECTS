@@ -18,9 +18,10 @@ def main():
                 a=x
                 for i in range(1, x+1):
                     if i == a:
-                        print(x)
+                        print(f"{i} = {x}")
                     else:
                         x*=i
+                        print(f"{i}*",end='')
             case 2:
                 s=int(input("Podaj liczbe: "))
                 wynik = silnia(s)
