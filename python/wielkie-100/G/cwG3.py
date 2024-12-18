@@ -1,13 +1,15 @@
 import pyinputplus as p
 
 def pobierz_dane():
-    inp=p.inputInt(prompt="Podaj ilość liczb ciągu do wygenerowania: ")
+    inp=p.inputInt(prompt="Podaj ilość liczb ciągu do wygenerowania: ", greaterThan=0)
     return inp
 
 def glowna():
     N=pobierz_dane()
     N0=0
     N1=1
+    if N==1:
+        print(0)
     for i in range(0, N-1):
         #dla pierwszego wyrazu ciągu zostaje wypisane 0
         if i==0:
