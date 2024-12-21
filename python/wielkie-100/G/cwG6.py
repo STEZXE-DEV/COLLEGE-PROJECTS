@@ -22,7 +22,7 @@ def liczba_lustrzana(a):
     if a==b:
         return b
     else:
-        return "Nie istnieje!"
+        return "NIE ISTNIEJE!"
 
 
 #funkcja, która wypisuje na ekranie liczbę podaną i jej liczbę lustrzaną dla każdego obsługiwanego systemu
