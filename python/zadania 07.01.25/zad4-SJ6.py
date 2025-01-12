@@ -13,7 +13,6 @@ for i in range(97,123):
 for i in litery:
     w_litery.append(i.upper())
 def pobierz_dane():
-    wybory=[]
     opcje=['T', 'N']
     inp1=p.inputInt(prompt="Podaj długość hasła (8-21 znaków): ", min=8, max=21)
     inp2=p.inputChoice(opcje, prompt="Czy hasło ma zawierać znaki specjalne (T/N): ") #4
@@ -59,9 +58,9 @@ def generowanie_hasla():
             r.shuffle(haslo)
             return haslo,ilosc_l,0,ilosc_c,0
         case 3: #litery + wielkie litery + cyfry
-            ilosc_l=r.randint(1, dl-1)
+            ilosc_l=r.randint(1, dl-2)
             mozliwa_ilosc_wl=dl-ilosc_l
-            ilosc_wl=r.randint(1, mozliwa_ilosc_wl)
+            ilosc_wl=r.randint(1, mozliwa_ilosc_wl-1)
             ilosc_c=mozliwa_ilosc_wl-ilosc_wl
             for i in range (0, ilosc_l):
                 haslo.append(r.choice(litery))
@@ -82,9 +81,9 @@ def generowanie_hasla():
             r.shuffle(haslo)
             return haslo,ilosc_l,0,0,ilosc_zs
         case 5: #litery + wielkie litery + znaki specjalne
-            ilosc_l=r.randint(1, dl-1)
+            ilosc_l=r.randint(1, dl-2)
             mozliwa_ilosc_wl=dl-ilosc_l
-            ilosc_wl=r.randint(1, mozliwa_ilosc_wl)
+            ilosc_wl=r.randint(1, mozliwa_ilosc_wl-1)
             ilosc_zs=mozliwa_ilosc_wl-ilosc_wl
             for i in range (0, ilosc_l):
                 haslo.append(r.choice(litery))
@@ -96,9 +95,9 @@ def generowanie_hasla():
             r.shuffle(haslo)
             return haslo,ilosc_l,ilosc_wl,0,ilosc_zs
         case 6: #litery + cyfry + znaki specjalne
-            ilosc_l=r.randint(1, dl-1)
+            ilosc_l=r.randint(1, dl-2)
             mozliwa_ilosc_c=dl-ilosc_l
-            ilosc_c=r.randint(1, mozliwa_ilosc_c)
+            ilosc_c=r.randint(1, mozliwa_ilosc_c-1)
             ilosc_zs=mozliwa_ilosc_c-ilosc_c
             for i in range (0, ilosc_l):
                 haslo.append(r.choice(litery))
@@ -109,11 +108,11 @@ def generowanie_hasla():
             r.shuffle(haslo)
             return haslo,ilosc_l,0,ilosc_c,ilosc_zs
         case 7: #litery + wielkie litery + cyfry + znaki specjalne
-            ilosc_l=r.randint(1, dl-1)
+            ilosc_l=r.randint(1, dl-3)
             mozliwa_ilosc_wl=dl-ilosc_l
-            ilosc_wl=r.randint(1, mozliwa_ilosc_wl)
+            ilosc_wl=r.randint(1, mozliwa_ilosc_wl-2)
             mozliwa_ilosc_c=mozliwa_ilosc_wl-ilosc_wl
-            ilosc_c=r.randint(1, mozliwa_ilosc_c)
+            ilosc_c=r.randint(1, mozliwa_ilosc_c-1)
             ilosc_zs=mozliwa_ilosc_c-ilosc_c
             for i in range (0, ilosc_l):
                 haslo.append(r.choice(litery))
