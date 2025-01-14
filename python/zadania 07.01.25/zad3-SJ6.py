@@ -45,7 +45,7 @@ def deszyfrowanie(a):
             if i==" ":
                 x.append(i)
             if i in litery.keys():
-                x.append((litery[i]+j)%26)
+                x.append((litery[i]-j)%26)
         x.append(",")
     for i in x:
         if i == " " or i == ",":
