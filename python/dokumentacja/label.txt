@@ -1,4 +1,4 @@
-"name" CURRENT_STATE <ver. 1.0> 
+"name" CURRENT_STATE <ver. 1.0>
 
 *CURRENT_STATE must be one of the following: 
 
@@ -6,4 +6,4 @@ COMPLETED (final),
 PROTOTYPE (can require some changes), 
 WIP (work in progress)
 
-#last updated 17.02.2025
+#last updated 18.02.2025
