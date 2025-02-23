@@ -2,8 +2,8 @@
 
 *CURRENT_STATE must be one of the following: 
 
-COMPLETED (final), 
+COMPLETE (final), 
 PROTOTYPE (can require some changes), 
 WIP (work in progress)
 
-#last updated 18.02.2025
+#last updated 23.02.2025
