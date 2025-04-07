@@ -3,3 +3,12 @@ python/testowe/cwC5_dalmierz.py
 python/testowe/miejsca_float.py
 python/testowe/papier_kamien.py
 python/testowe/ambitneF11.py
+/RUST
+/C++/first.cpp
+C++/generate_umath_validation_data.cpp
+/python/testowe
+GO/testgo.go
+/python/.vs
+/python/.vscode
+*.exe
+*.ini
