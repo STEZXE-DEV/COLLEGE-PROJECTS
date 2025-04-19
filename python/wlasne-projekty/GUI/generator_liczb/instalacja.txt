@@ -1,0 +1,6 @@
+pip install customtkinter
+pip install --upgrade wheel
+pip install --upgrade setuptools wheel
+pip install pygame
+pip install threading
+pip install mutagen
