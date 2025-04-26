@@ -31,6 +31,8 @@ def wyswietl_los():
     wynik_losowania.configure(okno_aplikacji, text=str(los), font=("Helvetica", 100))
     komunikat.configure(okno_aplikacji, text=f"Odtwarzanie dźwięku - nagranie{los}.mp3...", font=("Helvetica", 30))
     odtworz_dzwiek()
+    if komunikat.winfo_exists():  # Sprawdzenie, czy widżet komunikat istnieje
+        komunikat.configure(text=f"Odtwarzanie dźwięku - nagranie{los}.mp3...", font=("Helvetica", 30))
 
 # Funkcja przywraca widoczność przycisku losowania, który ukrywany jest w <wyswietl_los()>
 def pokaz_przycisk_losowania():
